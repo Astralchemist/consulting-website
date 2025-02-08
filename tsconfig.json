@@ -20,7 +20,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true
+    "noEmit": true,
+    "baseUrl": "./src",  // Added for cleaner imports
+    "paths": {
+      "*": ["node_modules/*", "src/*"] // Enables better module resolution
+    }
   },
   "include": [
     "src/**/*"
